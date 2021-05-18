@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		77477AD326546CF30003C5A4 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 77477AD126546CF30003C5A4 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77477ADA26546F200003C5A4 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77477AD926546F200003C5A4 /* AddAccount.swift */; };
+		77477ADC265471080003C5A4 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77477ADB265471080003C5A4 /* AccountModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		77477ACF26546CF30003C5A4 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77477AD126546CF30003C5A4 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		77477AD226546CF30003C5A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77477AD926546F200003C5A4 /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
+		77477ADB265471080003C5A4 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 		77477AD026546CF30003C5A4 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				77477AD926546F200003C5A4 /* AddAccount.swift */,
+				77477ADB265471080003C5A4 /* AccountModel.swift */,
 				77477AD126546CF30003C5A4 /* Domain.h */,
 				77477AD226546CF30003C5A4 /* Info.plist */,
 			);
@@ -94,6 +100,7 @@
 				TargetAttributes = {
 					77477ACE26546CF30003C5A4 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -130,6 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77477ADA26546F200003C5A4 /* AddAccount.swift in Sources */,
+				77477ADC265471080003C5A4 /* AccountModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +270,7 @@
 		77477AD526546CF30003C5A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -280,6 +290,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -287,6 +298,7 @@
 		77477AD626546CF30003C5A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
