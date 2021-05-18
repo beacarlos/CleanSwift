@@ -7,17 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		77477AD326546CF30003C5A4 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 77477AD126546CF30003C5A4 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		77477ADA26546F200003C5A4 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77477AD926546F200003C5A4 /* AddAccount.swift */; };
 		77477ADC265471080003C5A4 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77477ADB265471080003C5A4 /* AccountModel.swift */; };
+		77477AEB265471860003C5A4 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77477AE2265471860003C5A4 /* Data.framework */; };
+		77477AF0265471860003C5A4 /* DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77477AEF265471860003C5A4 /* DataTests.swift */; };
+		77477AFA265471C50003C5A4 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77477ACF26546CF30003C5A4 /* Domain.framework */; };
+		77477AFB265471C50003C5A4 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77477ACF26546CF30003C5A4 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77477AEC265471860003C5A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77477AB626546C140003C5A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77477AE1265471860003C5A4;
+			remoteInfo = Data;
+		};
+		77477AFC265471C50003C5A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77477AB626546C140003C5A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77477ACE26546CF30003C5A4;
+			remoteInfo = Domain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		77477AFE265471C50003C5A4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				77477AFB265471C50003C5A4 /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		77477ACF26546CF30003C5A4 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		77477AD126546CF30003C5A4 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		77477AD226546CF30003C5A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77477AD926546F200003C5A4 /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
 		77477ADB265471080003C5A4 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		77477AE2265471860003C5A4 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77477AE5265471860003C5A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77477AEA265471860003C5A4 /* DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77477AEF265471860003C5A4 /* DataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTests.swift; sourceTree = "<group>"; };
+		77477AF1265471860003C5A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +66,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		77477ADF265471860003C5A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77477AFA265471C50003C5A4 /* Domain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77477AE7265471860003C5A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77477AEB265471860003C5A4 /* Data.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -35,7 +89,10 @@
 			isa = PBXGroup;
 			children = (
 				77477AD026546CF30003C5A4 /* Domain */,
+				77477AE3265471860003C5A4 /* Data */,
+				77477AEE265471860003C5A4 /* DataTests */,
 				77477AC026546C140003C5A4 /* Products */,
+				77477AF9265471C50003C5A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -43,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				77477ACF26546CF30003C5A4 /* Domain.framework */,
+				77477AE2265471860003C5A4 /* Data.framework */,
+				77477AEA265471860003C5A4 /* DataTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,10 +111,33 @@
 			children = (
 				77477AD926546F200003C5A4 /* AddAccount.swift */,
 				77477ADB265471080003C5A4 /* AccountModel.swift */,
-				77477AD126546CF30003C5A4 /* Domain.h */,
 				77477AD226546CF30003C5A4 /* Info.plist */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		77477AE3265471860003C5A4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				77477AE5265471860003C5A4 /* Info.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		77477AEE265471860003C5A4 /* DataTests */ = {
+			isa = PBXGroup;
+			children = (
+				77477AEF265471860003C5A4 /* DataTests.swift */,
+				77477AF1265471860003C5A4 /* Info.plist */,
+			);
+			path = DataTests;
+			sourceTree = "<group>";
+		};
+		77477AF9265471C50003C5A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,7 +147,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77477AD326546CF30003C5A4 /* Domain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77477ADD265471860003C5A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,17 +178,62 @@
 			productReference = 77477ACF26546CF30003C5A4 /* Domain.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		77477AE1265471860003C5A4 /* Data */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77477AF3265471860003C5A4 /* Build configuration list for PBXNativeTarget "Data" */;
+			buildPhases = (
+				77477ADD265471860003C5A4 /* Headers */,
+				77477ADE265471860003C5A4 /* Sources */,
+				77477ADF265471860003C5A4 /* Frameworks */,
+				77477AE0265471860003C5A4 /* Resources */,
+				77477AFE265471C50003C5A4 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77477AFD265471C50003C5A4 /* PBXTargetDependency */,
+			);
+			name = Data;
+			productName = Data;
+			productReference = 77477AE2265471860003C5A4 /* Data.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		77477AE9265471860003C5A4 /* DataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77477AF6265471860003C5A4 /* Build configuration list for PBXNativeTarget "DataTests" */;
+			buildPhases = (
+				77477AE6265471860003C5A4 /* Sources */,
+				77477AE7265471860003C5A4 /* Frameworks */,
+				77477AE8265471860003C5A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77477AED265471860003C5A4 /* PBXTargetDependency */,
+			);
+			name = DataTests;
+			productName = DataTests;
+			productReference = 77477AEA265471860003C5A4 /* DataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		77477AB626546C140003C5A4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					77477ACE26546CF30003C5A4 = {
 						CreatedOnToolsVersion = 12.5;
 						LastSwiftMigration = 1250;
+					};
+					77477AE1265471860003C5A4 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					77477AE9265471860003C5A4 = {
+						CreatedOnToolsVersion = 12.5;
 					};
 				};
 			};
@@ -118,12 +251,28 @@
 			projectRoot = "";
 			targets = (
 				77477ACE26546CF30003C5A4 /* Domain */,
+				77477AE1265471860003C5A4 /* Data */,
+				77477AE9265471860003C5A4 /* DataTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		77477ACD26546CF30003C5A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77477AE0265471860003C5A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77477AE8265471860003C5A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -142,7 +291,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		77477ADE265471860003C5A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77477AE6265471860003C5A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77477AF0265471860003C5A4 /* DataTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77477AED265471860003C5A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77477AE1265471860003C5A4 /* Data */;
+			targetProxy = 77477AEC265471860003C5A4 /* PBXContainerItemProxy */;
+		};
+		77477AFD265471C50003C5A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77477ACE26546CF30003C5A4 /* Domain */;
+			targetProxy = 77477AFC265471C50003C5A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		77477AC526546C140003C5A4 /* Debug */ = {
@@ -322,6 +499,98 @@
 			};
 			name = Release;
 		};
+		77477AF4265471860003C5A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VH525588L5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Data/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.Data;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		77477AF5265471860003C5A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VH525588L5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Data/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.Data;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		77477AF7265471860003C5A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VH525588L5;
+				INFOPLIST_FILE = DataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.DataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		77477AF8265471860003C5A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VH525588L5;
+				INFOPLIST_FILE = DataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.DataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +608,24 @@
 			buildConfigurations = (
 				77477AD526546CF30003C5A4 /* Debug */,
 				77477AD626546CF30003C5A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77477AF3265471860003C5A4 /* Build configuration list for PBXNativeTarget "Data" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77477AF4265471860003C5A4 /* Debug */,
+				77477AF5265471860003C5A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77477AF6265471860003C5A4 /* Build configuration list for PBXNativeTarget "DataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77477AF7265471860003C5A4 /* Debug */,
+				77477AF8265471860003C5A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
